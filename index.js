@@ -89,24 +89,11 @@ icons.forEach(icon => {
             let call;
             if(target.id == "from"){
                 call = new SpeechSynthesisUtterance(fromText.value);
-                call.lang = selectTag[0].value;
-                // target.classList.toggle("bx-play");
-                // target.classList.toggle("bx-pause");
-                // setTimeout(() => {
-                //     target.classList.remove("bx-pause");
-                //     target.classList.add("bx-play");
-                // }, 500)
-               
+                call.lang = selectTag[0].value;       
             }
             else{
                 call = new SpeechSynthesisUtterance(toText.value);
                 call.lang = selectTag[1].value;
-                // target.classList.toggle("bx-play");
-                // target.classList.toggle("bx-pause");
-                // setTimeout(() => {
-                //     target.classList.remove("bx-pause");
-                //     target.classList.add("bx-play");
-                // }, 500)
             }
             speechSynthesis.speak(call);
         }
