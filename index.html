@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language_translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header class="head">
+        <h3>Language Translator</h3>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+        <div class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact us</a>
+            <!-- <i class="bx bx-search"></i> -->
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="wrapper">
+                <div class="text-input">
+                    <textarea class="from-text" placeholder="Enter text"></textarea>
+                    <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+                </div>
+                <ul class="controls">
+                    <li class="row form">
+                        <div class="icons">
+                            <!-- <i id="from" class='bx bx-play'></i> -->
+                            <i id="from" class="material-icons">volume_up</i>
+                            <i id="from" class="material-icons icon1">content_copy</i>
+                        </div>
+                        <select>
+                            <option value="en-US">English</option>
+                            <option value="hi-IN">Hindi</option>
+                            <option value="ne-NP">Nepali</option>
+                        </select>
+                    </li>
+                    <li class="exchange"><i class='bx bx-expand-horizontal'></i></li>
+                    <li class="row to">
+                        <select>
+                            <option value="hi-IN">Hindi</option>
+                            <option value="ne-NP">Nepali</option>
+                            <option value="en-US">English</option>
+                        </select>
+                        <div class="icons">
+                            <i id="to" class="material-icons">volume_up</i>
+                            <i id="to" class="material-icons icon1">content_copy</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button>Translate Text</button>
+        </div>
+    </section>
+    <script src="countries.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+
+</html>
